@@ -12,7 +12,7 @@ A social Networking application built on vanilla php with custom implementations
 
 #### Database Setup ####
 * Create a Database with same name as setup above
-* Import the `trybezone.sql` file to the created database
+* Import the `trybezone(1).sql` file to the created database
 
 ### Dependencies and Installables ###
 
