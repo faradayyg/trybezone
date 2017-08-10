@@ -1,0 +1,7 @@
+<div id='dummy'></div>
+</html>
+
+<!-- load scripts up in here -->
+<script src='js/jquery.js' type='text/javascript'></script>
+<script src='js/bootstrap.min.js' type='text/javascript'></script>
+<script src='js/myscript.js' type='text/javascript'></script>

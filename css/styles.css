@@ -1,0 +1,586 @@
+.invisible_span{
+    opacity:0.5;
+  }
+
+  .hide_
+  {
+    display: none;
+  }
+
+.quick_menu_list li
+{
+  border:1px solid #aaa;
+  border-radius: 0px;
+  background:#eee;
+}
+
+.quick_menu_list li a
+{
+  color:#c34;
+  font-weight: bold;
+  cursor:pointer;
+}
+.quick_menu_list li a:hover
+{
+  background:#ccc;
+  transition: 0.5s;
+}
+
+  .invisible_span:hover{
+    opacity: 1;
+  }
+.btn-file
+{
+	position:relative;
+	overflow:hidden;
+}
+
+.my_dialog
+{
+	width:200px;
+	min-width:300px;
+	margin:auto;
+	margin-top:10%;
+}
+.select-custom
+{
+  border: 1px solid #eee;
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance: none;
+  background:#fff;
+  display:inline;
+  color:#444;
+  padding:5px;
+  max-width:300px;
+  min-width:7px
+}
+
+::-webkit-scrollbar
+{
+	width:10px;
+	background:transparent;
+}
+
+::-webkit-scrollbar-track
+{
+  background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+  background:#e55;
+}
+.back_big
+{
+	position:fixed;top:0px;
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	z-index:15000
+}
+
+.btn-file input[type=file]
+{
+	position:absolute;
+	top:0;
+	right:0;
+	filter:alpha(opacity=0);
+	min-height:100%;
+	min-width:100%;
+	display:block;
+	font-size:100%;
+	cursor:inherit;
+	opacity:0;
+	outline:none;
+}
+.transparent
+{
+	background:transparent;
+}
+.pointer
+{
+	cursor:pointer;
+}
+.medium_image_padding
+{
+	padding:3px;
+	border:2px solid #aaa;
+	background:#eee;
+}
+
+.update img
+{
+	padding:2px;
+	border:1px solid #ddd;
+	float:left;
+}
+
+.update .name
+{
+	position:relative;
+	left:5px;
+}
+
+.update .comments
+{
+	background:#FFE6E6;
+	border-top:1.3px solid #ccc;
+	max-height:200px;
+	overflow:auto
+}
+
+.hr_small
+{
+	border:0px;
+	border-top:1px solid #000;
+	margin:5px;
+}
+
+.pad-tp
+{
+	padding-top:9px;
+}
+
+.no-border
+{
+	border:0px;
+}
+
+.no-resize
+{
+	resize:none;
+}
+/*
+A custom Bootstrap 3.2 'Holo' style theme
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+/* my own templates */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+html,body {
+  height: 100%;
+  font-family:  "Droid Sans Mono", arial;
+}
+
+p,h1,h2,h3,h4 {
+  font-family:  "Droid Sans Mono", arial;
+}
+
+hr {
+  border-color:#191919;
+}
+
+/* wrapper for page content to push down footer */
+.page-container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* negative indent footer by its height */
+  margin: 0 auto -120px;
+  /* pad bottom by footer height */
+  padding: 0 0 120px;
+}
+
+/* set the fixed height of the footer here */
+footer {
+  height: 120px;
+  background-color: #222222;
+  border:0 solid #080808;
+  border-top-width: 1px;
+  margin-top:50px;
+}
+
+footer > .container {
+  padding: 20px;
+}
+
+body {
+  background: #edd; /* Standard syntax */
+  color: #333;
+  background-size:100% 100%;
+  background-attachment:fixed;
+  padding-top:50px;
+}
+a {
+  color:#6699FF;
+}
+
+a:hover
+{
+	text-decoration:none;
+}
+.text-center {
+  padding-top: 20px;
+}
+
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 20px;
+}
+
+#sidebar .affix {
+  position:fixed;
+  top:55;
+  width:220px;
+}
+
+#sidebar .affix-bottom {
+  position:fixed;
+  top:55;
+  width:220px;
+}
+
+#sidebar .nav {
+  width: 95%;
+}
+#sidebar li {
+  border:0 #1e1e1e solid;
+  border-bottom-width:1px;
+}
+#sidebar li a {
+  padding-left:1px;
+}
+#sidebar li a:hover {
+  background-color:#222222;
+  color:#ffffff;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    background-color:#3b3b3b;
+    padding-top:0;
+  }
+  #sidebar .nav>li {
+    color: #ddd;
+    background: linear-gradient(#3E3E3E, #383838);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E;
+    padding-left:10px;
+  }
+  #sidebar .nav>li:first-child {
+    border-top:0;
+  }
+  #sidebar .nav>li>a {
+    color: #ddd;
+  }
+  #sidebar .nav>li>a>img {
+    max-width: 14px;
+  }
+  #sidebar .nav>li>a:hover, #sidebar .nav>li>a:focus {
+    text-decoration: none;
+    background: linear-gradient(#373737, #323232);
+    color: #fff;
+  }
+  #sidebar .nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+  #sidebar .nav a:hover .caret{
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+
+/* theme */
+.btn,.form-control,.alert,.progress,.panel,.list-group,.well,.list-group-item:first-child {border-radius:1px;box-shadow:0 0 0;}
+.btn {border-color:transparent;}
+.btn-default,.well {
+  background-color:#cccccc;
+  border-color:#c0c0c0;
+}
+.btn-primary,.label-primary,.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus,.btn.active,a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+   background-color:#0099CC;
+   border-color:transparent;
+}
+.btn-info,.label-info,.progress-bar-info {
+  background-color:#33b5e5;
+}
+.btn-success,.label-success,.progress-bar-success {
+  background-color:#669900;
+}
+.btn-danger,.label-danger,.progress-bar-danger {
+  background-color:#cb2222;
+  border-bottom:3px solid #aa2222;
+}
+.btn-warning,.label-warning,.progress-bar-warning {
+  background-color:#FFBB33;
+  color:#444444;
+}
+.nav-tabs>li>a {
+  border-radius:0;
+}
+
+h3,h4,h5,.panel {
+   color:#555555;
+}
+.panel hr {
+   border-color:#efefef;
+}
+.navbar-blue
+{
+	/*background:#990101; */
+	background:#8a0000;
+	font-family:"Droid Sans Mono",arial;
+	font-size:16px;
+}
+.navbar-blue li > a,.navbar-toggle,.badge  {
+   color:#efefef;
+}
+
+.navbar-blue .dropdown-menu li a {color:#2A4888;}
+.navbar-blue .dropdown-menu li > a {padding-left:30px;}
+
+.navbar-blue .ul{height:16px;}
+
+.navbar-blue li>a:hover, .navbar-blue li>a:focus, .navbar-blue .open, .navbar-blue .open>a, .navbar-blue .open>a:hover, .navbar-blue .open>a:focus {
+   background-color:#690101;
+   border:0px;
+   padding:16px;
+}
+.navbar-blue .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-blue .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background:transparent;
+}
+
+.wrapper-demo {
+    margin: 60px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+.wrapper-demo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/*navbar-red*/
+.navbar-red {
+	background:#8a0000;
+	font-family:"Droid Sans Mono",arial;
+	font-size:16px;
+}
+.navbar-red .navbar-brand {
+  color: #777;
+}
+.navbar-red .navbar-nav > li > a {
+  color: #eee;
+}
+.navbar-red .navbar-nav > li > a:hover,
+.navbar-red .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #600;
+  border-color:#600;
+}
+.navbar-red .navbar-nav > .active > a,
+.navbar-red .navbar-nav > .active > a:hover,
+.navbar-red .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #600;
+  border-color:#600;
+}
+.navbar-red .navbar-nav > .disabled > a,
+.navbar-red .navbar-nav > .disabled > a:hover,
+.navbar-red .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-red .navbar-toggle {
+  border-color: transparent;
+  border:0px;
+}
+.navbar-red .navbar-toggle:hover,
+.navbar-red .navbar-toggle:focus {
+  background-color: #600;
+}
+.navbar-red .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-red .navbar-collapse,
+.navbar-red .navbar-form {
+  border-color: #e7e7e7;
+  border:0px;
+}
+.navbar-red .navbar-nav > .open > a,
+.navbar-red .navbar-nav > .open > a:hover,
+.navbar-red .navbar-nav > .open > a:focus {
+  color: #eee;
+  background-color: #600;
+}
+@media (max-width: 767px) {
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-red .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #600;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #eee;
+    background-color: transparent;
+  }
+}
+
+.btn-default
+{
+	background:#ccc;
+	border-bottom:2px solid #aaa;
+}
+
+.btn-danger
+{
+
+}
+
+.profile_info_btn
+{
+  background:#fff;
+  border-bottom:2px solid #ddd;
+  text-align: center;
+  padding:4px;
+  margin:0px;
+  margin-left:3px;
+  margin-bottom: 10px;
+  width:100%;
+  height: 40px;
+  border-radius: 0 0 15px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+@media (max-width:1120px)
+{
+  .hide_this_shit
+  {
+    display: none;
+  }
+}
+
+.centered_text
+{
+  text-align: center;
+  color:#55f;
+  font-weight: bold;
+}
+
+.edit_panel
+{
+  font-weight:normal;
+  padding:15px;
+  border:1px solid #eee;
+  box-shadow:0,0,2px rgba(0,0,0,0.7);
+  cursor:pointer;
+
+}
+
+.edit_panel:hover
+{
+  background:#dde;
+  transition:0.3s;
+}
+
+.my_popover{
+  position:fixed;
+  top:60px;
+  z-index: 5000;
+  width:30%;
+  padding:15px;
+  min-width:280px;
+  left:30%;
+  background:#ddd;
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.my_popover_close{
+  float:right;
+  font-weight: bold;
+  font-size:1.2em;
+  cursor:pointer;
+  color:#444 ;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.my_popover_close:hover
+{
+  color:#000;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.round_item
+{
+  border-radius: 50%;
+}
+
+
+.medium_icon_size
+{
+  font-size:1.5em;
+}
+
+.big_icon_size
+{
+  font-size: 2em;
+}
